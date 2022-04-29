@@ -1,0 +1,29 @@
+header {
+    margin-top: 0.5em;
+  }
+  
+  span {
+    font-weight: 700;
+    font-size: 2em;
+    position: absolute;
+    width: fit-content;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  a {
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    color: #ffffff;
+    // text-shadow: 2px 2px #ff0000;
+    text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.6);
+    transform: translateY(-7%);
+    transition: all .5s ease;
+  }
+  

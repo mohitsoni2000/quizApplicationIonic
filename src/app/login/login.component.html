@@ -1,0 +1,10 @@
+<main>
+  <div id="container">
+    <div class="form">
+      <img src="../../../assets/Screenshot from 2022-04-28 14-04-10.png"><br>
+      <input type="text" placeholder="username" [(ngModel)]="users.user"><br>
+      <input type="password" placeholder="password" [(ngModel)]="users.password" (keyup.enter)="onLogin()"><br>
+      <input type="submit" value="SIGN IN" (click)="onLogin()"><br>
+    </div>
+  </div>
+</main>
