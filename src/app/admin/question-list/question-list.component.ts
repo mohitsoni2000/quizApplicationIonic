@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QuestionModel } from '../question.model';
 
 @Component({
   selector: 'app-question-list',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionListComponent implements OnInit {
 
+  questionArray: QuestionModel[] = [];
+
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.questionArray = JSON.parse(localStorage.getItem('Questions'));
+  }
 
 }

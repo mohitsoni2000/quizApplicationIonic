@@ -1,0 +1,127 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css");
+.container {
+  border: 1px solid #686868;
+  border-radius: 13px;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  color: #fff;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: none;
+}
+
+[placeholder]::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+[placeholder]:hover::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+[placeholder]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+[placeholder]::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+[placeholder]:hover::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+[placeholder]:focus::-moz-placeholder {
+  color: transparent;
+}
+
+[placeholder]:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+[placeholder]:hover:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+[placeholder]:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+form {
+  margin: 2em;
+}
+
+li {
+  list-style-type: none;
+}
+
+input[type="text"] {
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 6px 10px 8px 10px;
+  border: 1px solid rgba(248, 248, 248, 0.4);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.radio {
+  position: relative;
+  display: flex;
+  margin: 0 20px 20px 0;
+}
+
+
+input[type='radio']{
+  -webkit-appearance: none;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 10px auto;
+  vertical-align: middle;
+  border: 1px solid rgba(167, 167, 167, 0.5);
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type='radio']:hover{
+  background: rgba(233, 232, 232, 0.25);
+  // color: rgba(255, 255, 255, 0.4);
+}
+
+input[type='radio']:checked{
+  background: rgba(255, 255, 255, 1);
+}
+
+input[type="submit"] {
+  display: block;
+  width: 150px;
+  margin: 0 0 20px;
+  padding: 8px 0 10px 0;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.question-text {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 4px;
+}

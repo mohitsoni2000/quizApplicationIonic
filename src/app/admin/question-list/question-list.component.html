@@ -1,1 +1,33 @@
 <app-header></app-header>
+<div class="container overflow-auto">
+    <h1>
+        Question List!
+    </h1>
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Question No.</th>
+            <th scope="col">Question Text</th>
+            <th scope="col">Option 1</th>
+            <th scope="col">Option 2</th>
+            <th scope="col">Option 3</th>
+            <th scope="col">Option 4</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let question of questionArray; let i = index">
+          <tr>
+            <th scope="row">{{i + 1 }}</th>
+            <td>{{question.question}}</td>
+            <td *ngFor="let option of question.optionArray">
+                <span class="badge rounded-pill bg-light text-dark" *ngIf="option.correct">Correct</span>
+                {{option.text}}
+            </td>
+            <td>
+                <button type="button" class="btn btn-outline-light">Edit</button>
+                <button type="button" class="btn btn-outline-light">Delete</button>
+            </td>
+          </tr>          
+        </tbody>
+      </table>
+</div>

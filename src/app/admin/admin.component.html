@@ -1,1 +1,35 @@
 <app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col12">
+      <h1>Add your Question, Option and Select one Answer.</h1>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="question">
+      <label for="question-text" class="question-text">Question Text</label><label style="color: red;">*</label>
+      <input type="text" placeholder="Add Your question" [(ngModel)]="questionObj.question" />
+    </div>
+  </div>
+  <div class="row">
+    <li *ngFor="let option of questionObj.optionArray; let i = index">
+      <div class="row">
+        <div class="col-12">
+          <div class="radio">
+            <div class="col-1">
+              <input class="radio-button" id="radio{{i+1}}" type="radio" name="radio2"
+                [checked]="option.correct == true" [value]="true" (change)="onRadioChange(i)" />
+            </div>
+            <div class="col-11">
+              <input type="text" placeholder="Add Option {{i+1}}" [(ngModel)]="option.text" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </li>
+  </div>
+
+  <input type="submit" value="Send" (click)="add()" />
+</div>
